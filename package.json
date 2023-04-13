@@ -1,0 +1,33 @@
+{
+  "name": "sql-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "node-sql-parser": "^4.6.6",
+    "pgsql-ast-parser": "^11.0.1",
+    "sql-formatter": "^12.2.0"
+  },
+  "devDependencies": {
+    "ava": "^5.2.0",
+    "get-stdin": "^9.0.0",
+    "xo": "^0.54.0"
+  },
+  "ava": {
+    "verbose": true
+  },
+  "xo": {
+    "prettier": true,
+    "space": 2,
+    "semicolon": false,
+    "rules": {
+      "import/extensions": "off",
+      "import/no-anonymous-default-export": "off",
+      "import/no-useless-path-segments": "off",
+      "unicorn/import-index": "off"
+    }
+  }
+}
